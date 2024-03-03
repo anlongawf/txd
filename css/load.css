@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.5fr 0.3fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'one two three'
+    'five five five';
+}
+p {
+  position: relative;
+  margin-top: 10%;
+  left: 10%;
+  font-size: 40px;
+}
+img {
+  padding-top: 10%;
+  margin-left: 20%;
+  width: 60%;
+}
+#git {
+  grid-area: one;
+}
+#bash {
+  max-width: 38%;
+  grid-area: five;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#github {
+  grid-area: three;
+}
+.img1 {
+}
+
+.img1 img {
+  display: inline-block;
+  border-radius: 50%;
+  height: 50;
+  width: 200px;
+}
+.img2 img {
+  display: inline-block;
+  border-radius: 50%;
+  height: 50;
+  width: 200px;
+}
